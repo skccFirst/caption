@@ -1,8 +1,12 @@
-package youtubecaption;
+package youtube;
 
 import javax.persistence.*;
 import org.springframework.beans.BeanUtils;
-import java.util.List;
+import org.springframework.cloud.stream.messaging.Processor;
+import org.springframework.messaging.MessageChannel;
+import org.springframework.messaging.MessageHeaders;
+import org.springframework.messaging.support.MessageBuilder;
+import org.springframework.util.MimeTypeUtils;
 
 @Entity
 @Table(name="CaptionService_table")

@@ -1,4 +1,4 @@
-package youtubecaption;
+package youtube;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 

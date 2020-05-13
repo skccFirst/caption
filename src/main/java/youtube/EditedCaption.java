@@ -1,12 +1,12 @@
-package youtubecaption;
+package youtube;
 
-public class DeletedCaption extends AbstractEvent {
+public class EditedCaption extends AbstractEvent {
 
     private Long captionId;
     private Long videoId;
     private String captionInfo;
 
-    public DeletedCaption(){
+    public EditedCaption(){
         super();
     }
 
