@@ -24,7 +24,7 @@ public class CaptionService {
         BeanUtils.copyProperties(this, createdCaption);
         createdCaption.publishAfterCommit();
 
-
+        System.out.println(("**********자막이 생성되었습니다**********"));
     }
 
     @PreUpdate
@@ -33,7 +33,7 @@ public class CaptionService {
         BeanUtils.copyProperties(this, editedCaption);
         editedCaption.publishAfterCommit();
 
-
+        System.out.println(("**********자막이 수정되었습니다**********"));
     }
 
     @PreRemove
@@ -42,7 +42,7 @@ public class CaptionService {
         BeanUtils.copyProperties(this, deletedCaption);
         deletedCaption.publishAfterCommit();
 
-
+        System.out.println(("**********자막이 삭제되었습니다**********"));
     }
 
 
@@ -67,8 +67,5 @@ public class CaptionService {
     public void setCaptionId(Long captionId) {
         this.captionId = captionId;
     }
-
-
-
 
 }
